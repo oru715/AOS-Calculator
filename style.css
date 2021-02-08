@@ -1,0 +1,22 @@
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(175, 247, 223);
+    min-height: fit-content;
+}
+.form{
+    width: 750px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: cornsilk;
+    border-radius: 10px;
+
+}

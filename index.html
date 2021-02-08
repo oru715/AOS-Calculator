@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Area of Shapes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>A.O.S CALCULATOR</h1>
+    <div class="form">
+        <form action="javascript:calculateArea()" onchange="updateForm()">
+            <label for="id_shapes">Select a shape</label>
+            <select id="id_shapes">
+                <option value="circle" selected>Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="cylinder">Cylinder</option>
+    </div>
+    </select>
+
+
+
+
+    <br><br>
+
+    <div id="id_inputs_circle">
+        <label for="id_radius">Radius</label>
+        <input id="id_radius" type="number" min="0" step="any">
+    </div>
+    <div id="id_inputs_triangle" hidden>
+        <label for="id_base">Base</label>
+        <input id="id_base" type="number" min="0" step="any">
+        <label for="id_height">Height</label>
+        <input id="id_height" type="number" min="0" step="any">
+    </div>
+    <div id="id_inputs_rectangle" hidden>
+        <label for="id_length">Length</label>
+        <input id="id_length" type="number" min="0" step="any">
+        <label for="id_width">Width</label>
+        <input id="id_width" type="number" min="0" step="any">
+    </div>
+    <div id="id_inputs_cylinder" hidden>
+        <label for="id_radius">Radius</label>
+        <input id="id_radius" type="number" min="0" step="any">
+        <label for="id_height">Height</label>
+        <input id="id_height" type="number" min="0" step="any">
+    </div>
+
+    <br><br>
+
+    <input type="submit" class="sub" value="Calculate Area">
+    <p id="id_result"></p>
+
+    </form>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
